@@ -1,7 +1,5 @@
 <?php 
 session_start();
-
-
 include 'dbHandler.php';
 
 $username = $_POST['username'];
@@ -13,6 +11,6 @@ mysqli_close($dbc);
 
 $_SESSION['username'] = $username;
 
-header("Location: index.php");
+header("Location: myInventory.php");
 die();
 ?>

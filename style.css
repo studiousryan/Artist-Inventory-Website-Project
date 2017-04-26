@@ -4,4 +4,18 @@
 body {
 	background-image: url("images/camera.jpg");
 	font-family: 'Exo', sans-serif;
+	color: #007cc1;
+}
+
+header {
+	background-color: black;
+}
+
+header nav ul li a {
+	
+}
+
+
+header nav ul li a#btnToLoginPage {
+	/*display: none;*/
 }
