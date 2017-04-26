@@ -12,7 +12,7 @@ session_start();
 </head>
 <body>
 	<a href="signup.php">Sign up</a><br>
-	<a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Log out</a>
+	<a href="logoutHandler.php"><span class="glyphicon glyphicon-log-out"></span> Log out</a>
 
 
 <?php
@@ -24,7 +24,7 @@ if (isset($_SESSION['username'])) {
 	}
 	echo "
 		<div class='credential-window' id='login-window'>
-			<form action='login.php' method='POST'>
+			<form action='loginHandler.php' method='POST'>
 				<input type='text' name='username' placeholder='username'>
 				<input type='passsword' name='password' placeholder='password'>
 				<button type='submit'><span class='glyphicon glyphicon-log-in'></span> Log in</button>
