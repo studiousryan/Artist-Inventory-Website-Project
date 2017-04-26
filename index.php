@@ -15,7 +15,7 @@ session_start();
 		<nav>
 			<ul>
 				<li><a id='btnToLoginPage' href="login.php"><span class="glyphicon glyphicon-log-in"></span> Log in</a></li>
-				<li><a href="logoutHandler.php"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
+				<li><a id='logoutBtn' href="logoutHandler.php"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
 				<!-- <p id='greeting'>Welcome back, <span>$_SESSION['username']</span>.</p> -->
 			</ul>
 		</nav>
@@ -24,10 +24,10 @@ session_start();
 	<div id='mainBody'>
 		<div class='credential-window' id='signup-window'>
 			<form action='signupHandler.php' method='POST'>
-				<input type='text' name='username' placeholder='username'>
-				<input type='passsword' name='password' placeholder='password'>
-				<input type='passsword' name='confirmedPasssword' placeholder='confirm password'>
-				<button type='submit'>Sign up</button>
+				<p><input type='text' name='username' placeholder=' username'></p>
+				<p><input type='passsword' name='password' placeholder=' password'></p>
+				<p><input type='passsword' name='confirmedPasssword' placeholder=' confirm password'></p>
+				<p><button type='submit' id='signupBtn'>Sign up</button></p>
 			</form>
 		</div>
 	</div>
