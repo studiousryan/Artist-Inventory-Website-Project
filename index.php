@@ -21,6 +21,7 @@ if (isset($_SESSION['username'])) {
 } else {
 	if (isset($_SESSION['loginError'])) {
 		echo "Your username or password does NOT exist. <br>";
+		unset($_SESSION['loginError']);
 	}
 	echo "
 		<div class='credential-window' id='login-window'>

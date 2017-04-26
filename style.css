@@ -1,1 +1,7 @@
-@import	url();
+@import	url(http://fonts.googleapis.com/css?family=Exo);
+@import	url(http:////fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+body {
+	background-image: url("images/camera.jpg");
+	font-family: 'Exo', sans-serif;
+}
