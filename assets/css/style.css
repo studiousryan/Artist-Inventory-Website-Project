@@ -180,7 +180,10 @@ img { max-width: 100%; }
 
 
 .form-top-left h3 { margin-top: 0; color: #fff; }
-.form-top-left p { opacity: 0.8; color: #fff; }
+.form-top-left p {
+	opacity: 1; 
+	color: white;
+}
 
 .form-top-right {
 	float: left;
@@ -210,7 +213,7 @@ img { max-width: 100%; }
 }
 
 .form-bottom form .input-error {
-	border-color: #19b9e7;
+	border-color: red;
 }
 
 .social-login {
