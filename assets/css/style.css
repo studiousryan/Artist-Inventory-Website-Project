@@ -1,6 +1,8 @@
 
+@import	url(https://fonts.googleapis.com/css?family=Exo);
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Exo', sans-serif;
     font-size: 16px;
     font-weight: 300;
     color: #888;
@@ -106,14 +108,11 @@ img { max-width: 100%; }
 
 .welcome-heading {
 	background-color: #222;
-	height: 60px;
 	border-radius: 4px;
 }
 
 .welcome-heading h1 {
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
+	line-height: 60px;
 }
 
 .top-content .text h1 {
