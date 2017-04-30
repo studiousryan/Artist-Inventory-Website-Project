@@ -87,6 +87,18 @@ img { max-width: 100%; }
 	line-height: 20px;
 }
 
+/***** New added style *****/
+
+.col-sm-5 {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.blue-span {
+	color: #19b9e7;
+}
+
 
 /***** Top content *****/
 .navbar {
@@ -117,10 +129,6 @@ img { max-width: 100%; }
 
 .top-content .text h1 {
 	color: white;
-}
-
-.blue-span {
-	color: #19b9e7;
 }
 
 .top-content .description {
@@ -159,26 +167,14 @@ img { max-width: 100%; }
 	padding: 25px 15px 0 15px;
 }
 
-
-
-
-.col-sm-5 {
-	position: relative;
-	left: 50%;
-	transform: translateX(-50%);
-}
-
 .form-top-left > p {
 	font-size: 1.2em;
 }
 
+.form-top-left h3 { 
+	margin-top: 0; color: #fff; 
+}
 
-
-
-
-
-
-.form-top-left h3 { margin-top: 0; color: #fff; }
 .form-top-left p {
 	opacity: 1; 
 	color: white;
@@ -276,4 +272,23 @@ footer a:hover, footer a:focus { color: #fff; border-bottom: 1px dotted #fff; }
 	h1, h2 { font-size: 32px; }
 
 }
+
+/***** new added classes *****/
+
+
+
+/***** Icons *****/
+.green-icon {
+	color: green;
+	height: 50px;
+	top: 50%;
+}
+
+.hidden-icon {
+	display: none;
+}
+
+/*input#form-first-name {
+    width: 70%;
+}*/
 

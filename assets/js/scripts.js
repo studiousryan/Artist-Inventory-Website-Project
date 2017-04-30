@@ -33,6 +33,10 @@ jQuery(document).ready(function() {
     $('.registration-form input[type="text"], .registration-form textarea').on('focus', function() {
     	$(this).removeClass('input-error');
     });
+
+    $('#form-first-name').on('focusout', function(){
+        
+    });
     
     $('.registration-form').on('submit', function(e) {
     	
