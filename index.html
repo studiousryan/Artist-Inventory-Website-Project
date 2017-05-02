@@ -72,25 +72,27 @@
 	                        		</div>
 	                            </div>
 	                            <div class="form-bottom">
-				                    <form role="form" action="" method="post" class="registration-form">
+				                    <form role="form" action="signupHandler.php" method="post" class="registration-form" id='registration-form' onsubmit='return checkForm(this);'>
 				                    	<div class="form-group">
-				                    		<label class="sr-only" for="form-username">First name</label>
+				                    		<label class="sr-only" for="formUsername">Username</label>
 
 				                        	<!-- <input type="text" name="form-first-name" placeholder="First name" class="form-first-name form-control" id="form-first-name" pattern='^\w+$'> -->
-                                            <input type="text" name="form-username" placeholder="Username" class="form-username form-control" id="form-username" pattern='^\w+$'>
-                                            <span class="glyphicon glyphicon-ok green-icon hidden-icon" id='username-status-icon'></span>
+                                            <input type="text" name="formUsername" placeholder="Username" class="form-username form-control" id="form-username" pattern='^\w+$' required>
+                                            <span class="glyphicon glyphicon-ok green-icon hide-for-now" id='username-yes'></span>
+                                            <span class="glyphicon glyphicon-remove red-icon hide-for-now" id='username-no'></span>
+                                            <span id='usernameAvailInfo'></span>
 				                        </div>
 				                        <div class="form-group">
-				                        	<label class="sr-only" for="form-email">Email</label>
-				                        	<input type="email" name="form-email" placeholder="Email address" class="form-email form-control" id="form-email" pattern='(?=^.{8,}$)((?=.*\w)|(?=.*\W+))(?![.\n])(?!.*\s).*$'>
+				                        	<label class="sr-only" for="formEmail">Email</label>
+				                        	<input type="email" name="formEmail" placeholder="Email address" class="form-email form-control" id="form-email" required>
 				                        </div>
                                         <div class="form-group">
-                                            <label class="sr-only" for="form-password">Password</label>
-                                            <input type="password" name="form-password" placeholder="Password" class="form-password form-control" id="form-password">
+                                            <label class="sr-only" for="formPassword">Password</label>
+                                            <input type="password" name="formPassword" placeholder="Password" class="form-password form-control" id="form-password" pattern='(?=^.{8,}$)((?=.*\w)|(?=.*\W+))(?![.\n])(?!.*\s).*$' required>
                                         </div>
                                         <div class="form-group">
-                                            <label class="sr-only" for="form-confirm-password">Password</label>
-                                            <input type="password" name="form-confirm-password" placeholder="Confirm your password" class="form-confirm-password form-control" id="form-confirm-password">
+                                            <label class="sr-only" for="formConfirmedPassword">Password</label>
+                                            <input type="password" name="formConfirmedPassword" placeholder="Confirm your password" class="form-confirmed-password form-control" id="form-confirmed-password" required>
                                         </div>
 				                        <!-- <div class="form-group">
 				                        	<label class="sr-only" for="form-about-yourself">About yourself</label>

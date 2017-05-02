@@ -284,7 +284,13 @@ footer a:hover, footer a:focus { color: #fff; border-bottom: 1px dotted #fff; }
 	top: 50%;
 }
 
-.hidden-icon {
+.red-icon {
+	color: red;
+	height: 50px;
+	top: 50%;
+}
+
+.hide-for-now {
 	display: none;
 }
 

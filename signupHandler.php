@@ -1,13 +1,15 @@
 <?php 
 session_start();
 include 'dbHandler.php';
+include 'tableVars.php';
 
-$username = $_POST['username'];
-$pwd = $_POST['password'];
+$username = $_POST['formUsername'];
+$email = $_POST['formEmail'];
+$pwd = $_POST['formPassword'];
+$insertion = "INSERT INTO " . USERTABLE . "(" . USERNAME . ", " . EMAIL . ", " . PASSWORD . ") VALUES ('" . $username . "', '" . $email . "', '" . $pwd . "');";
 
-$insertion = "INSERT INTO User_Information (username, user_password) VALUES ('$username', '$pwd')";
-mysqli_query($dbc, $insertion) or die("Error in inserting into database!");
-mysqli_close($dbc);
+mysqli_query($DBC, $insertion) or die("Error in inserting into database!");
+mysqli_close($DBC);
 
 $_SESSION['username'] = $username;
 
