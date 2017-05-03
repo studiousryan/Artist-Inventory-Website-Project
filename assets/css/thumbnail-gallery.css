@@ -1,0 +1,32 @@
+/*!
+ * Start Bootstrap - Thumbnail Gallery (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+
+}
+
+@media (min-width: 768px) {
+    #my-inventory {
+        width: 100%;
+    }
+}
+
+#my-inventory-welcome-heading {
+	margin-bottom: 40px;
+}
+
+.work-container {
+    margin-top: 40px;
+}
+
+.thumb {
+    margin-bottom: 30px;
+}
+
+
+footer {
+    margin: 50px 0;
+}
