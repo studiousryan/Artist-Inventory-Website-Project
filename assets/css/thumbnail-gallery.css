@@ -18,14 +18,22 @@ body {
 	margin-bottom: 40px;
 }
 
-.work-container {
+.margin-top-40px {
     margin-top: 40px;
 }
 
-.thumb {
-    margin-bottom: 30px;
+.thumbnail {
+    /*display: block;*/
+    padding: 0;
+    /*margin-bottom: 20px;*/
+    /*line-height: 1.42857143;*/
+    /*background-color: #fff;*/
+    border: 1px solid black;
+    border-radius: 0;
+    /*-webkit-transition: border .2s ease-in-out;*/
+    /*-o-transition: border .2s ease-in-out;*/
+    /*transition: border .2s ease-in-out;*/
 }
-
 
 footer {
     margin: 50px 0;
