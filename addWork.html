@@ -65,22 +65,25 @@
                     
                     <div class="row">
                         <form class="well form-horizontal col-sm-5" action=" " method="post"  id="add_work_form">
+                            
                             <fieldset>
-
-                                <!-- Form Name -->
                                 <legend class='blue'>Work details</legend>
+                            </fieldset>
 
-                                <!-- Text input-->
+                            <!-- Text input-->
+                            <fieldset>
                                 <div class="form-group">
                                     <label class="col-md-4 control-label blue">Title</label>
                                     <div class="col-md-4 inputGroupContainer groupContainer">
                                         <div class="input-group">
-                                            <input  name="title" placeholder="Title" class="form-control"  type="text">
+                                            <input  name="title" placeholder="Title" class="form-control"  type="text" required>
                                         </div>
                                     </div>
                                 </div>
+                            </fieldset>
 
-                                <!-- radio checks -->
+                            <!-- radio -->
+                            <fieldset id='media-group'>
                                 <div class="form-group">
                                     <label class="col-md-4 control-label blue">Media</label>
                                     <div class="col-md-4 groupContainer">
@@ -89,19 +92,19 @@
                                                 <tr>
                                                     <td>
                                                         <div class="radio">
-                                                            <input type="radio" name="hosting" value="no" id='media1'/>
+                                                            <input type="radio" name="media-group" value="Oil, oil pastel" id='media1' required/>
                                                             <label for='media1'> Oil, oil pastel</label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="radio">
-                                                            <input type="radio" name="hosting" value="no" id='media2'/>
+                                                            <input type="radio" name="media-group" value="Acrylic" id='media2'/>
                                                             <label for='media2'> Acrylic</label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="radio">
-                                                            <input type="radio" name="hosting" value="no" id='media3'/>
+                                                            <input type="radio" name="media-group" value="Watercolor" id='media3'/>
                                                             <label for='media3'> Watercolor</label>
                                                         </div>
                                                     </td>
@@ -109,19 +112,19 @@
                                                 <tr>
                                                     <td>
                                                         <div class="radio">
-                                                            <input type="radio" name="hosting" value="no" id='media4'/>
+                                                            <input type="radio" name="media-group" value="Mixed Media" id='media4'/>
                                                             <label for='media4'> Mixed Media</label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="radio">
-                                                            <input type="radio" name="hosting" value="no" id='media5'/>
+                                                            <input type="radio" name="media-group" value="Pen" id='media5'/>
                                                             <label for='media5'> Pen</label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="radio">
-                                                            <input type="radio" name="hosting" value="no" id='media6'/>
+                                                            <input type="radio" name="media-group" value="Graphite" id='media6'/>
                                                             <label for='media6'> Graphite</label>
                                                         </div>
                                                     </td>
@@ -129,19 +132,19 @@
                                                 <tr>
                                                     <td>
                                                         <div class="radio">
-                                                            <input type="radio" name="hosting" value="no" id='media7'/>
+                                                            <input type="radio" name="media-group" value="Fiber, felt, fabric" id='media7'/>
                                                             <label for='media7'> Fiber, felt, fabric</label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="radio">
-                                                            <input type="radio" name="hosting" value="no" id='media8'/>
+                                                            <input type="radio" name="media-group" value="Pastel" id='media8'/>
                                                             <label for='media8'> Pastel</label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="radio">
-                                                            <input type="radio" name="hosting" value="no" id='media9'/>
+                                                            <input type="radio" name="media-group" value="Silkscreen" id='media9'/>
                                                             <label for='media9'> Silkscreen</label>
                                                         </div>
                                                     </td>
@@ -150,8 +153,10 @@
                                         </table>
                                     </div>
                                 </div>
+                            </fieldset>
 
-                                <!-- radio checks -->
+                            <!-- radio -->
+                            <fieldset id='support-group'>
                                 <div class="form-group">
                                     <label class="col-md-4 control-label blue">Support</label>
                                     <div class="col-md-4 groupContainer">
@@ -160,19 +165,19 @@
                                                 <tr>
                                                     <td>
                                                         <div class="radio">
-                                                            <input type="radio" name="hosting" value="no" id='support1'/>
+                                                            <input type="radio" name="support-group" value="Archival Canvas" id='support1' required/>
                                                             <label for='support1'> Archival Canvas</label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="radio">
-                                                            <input type="radio" name="hosting" value="no" id='support2'/>
+                                                            <input type="radio" name="support-group" value="Archival Claybord" id='support2'/>
                                                             <label for='support2'> Archival Claybord</label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="radio">
-                                                            <input type="radio" name="hosting" value="no" id='support3'/>
+                                                            <input type="radio" name="support-group" value="Archival Gesso Panel" id='support3'/>
                                                             <label for='support3'> Archival Gesso Panel</label>
                                                         </div>
                                                     </td>
@@ -180,19 +185,19 @@
                                                 <tr>
                                                     <td>
                                                         <div class="radio">
-                                                            <input type="radio" name="hosting" value="no" id='support4'/>
+                                                            <input type="radio" name="support-group" value="Archival Canvas Panel" id='support4'/>
                                                             <label for='support4'> Archival Canvas Panel</label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="radio">
-                                                            <input type="radio" name="hosting" value="no" id='support5'/>
+                                                            <input type="radio" name="support-group" value="Canvas Panel" id='support5'/>
                                                             <label for='support5'> Canvas Panel</label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="radio">
-                                                            <input type="radio" name="hosting" value="no" id='support6'/>
+                                                            <input type="radio" name="support-group" value="Wood" id='support6'/>
                                                             <label for='support6'> Wood</label>
                                                         </div>
                                                     </td>
@@ -200,19 +205,19 @@
                                                 <tr>
                                                     <td>
                                                         <div class="radio">
-                                                            <input type="radio" name="hosting" value="no" id='support7'/>
+                                                            <input type="radio" name="support-group" value="Handmade archival cotton paper" id='support7'/>
                                                             <label for='support7'> Handmade archival cotton paper</label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="radio">
-                                                            <input type="radio" name="hosting" value="no" id='support8'/>
+                                                            <input type="radio" name="support-group" value="Archival paper" id='support8'/>
                                                             <label for='support8'> Archival paper</label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="radio">
-                                                            <input type="radio" name="hosting" value="no" id='support9'/>
+                                                            <input type="radio" name="support-group" value="Paper" id='support9'/>
                                                             <label for='support9'> Paper</label>
                                                         </div>
                                                     </td>
@@ -221,8 +226,10 @@
                                         </table>
                                     </div>
                                 </div>
+                            </fieldset>
 
-                                <!-- radio checks -->
+                            <!-- radio -->
+                            <fieldset id='framing-group'>
                                 <div class="form-group">
                                     <label class="col-md-4 control-label blue">Framing</label>
                                     <div class="col-md-4 groupContainer">
@@ -231,19 +238,19 @@
                                                 <tr>
                                                     <td>
                                                         <div class="radio">
-                                                            <input type="radio" name="hosting" value="no" id='framing1'/>
+                                                            <input type="radio" name="framing-group" value="Black lacquered wood" id='framing1' required/>
                                                             <label for='framing1'> Black lacquered wood</label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="radio">
-                                                            <input type="radio" name="hosting" value="no" id='framing2'/>
+                                                            <input type="radio" name="framing-group" value="Black plastic" id='framing2'/>
                                                             <label for='framing2'> Black plastic</label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="radio">
-                                                            <input type="radio" name="hosting" value="no" id='framing3'/>
+                                                            <input type="radio" name="framing-group" value="Metal" id='framing3'/>
                                                             <label for='framing3'> Metal</label>
                                                         </div>
                                                     </td>
@@ -251,13 +258,13 @@
                                                 <tr>
                                                     <td>
                                                         <div class="radio">
-                                                            <input type="radio" name="hosting" value="no" id='framing4'/>
+                                                            <input type="radio" name="framing-group" value="Gallery-edged; no frame" id='framing4'/>
                                                             <label for='framing4'> Gallery-edged; no frame</label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="radio">
-                                                            <input type="radio" name="hosting" value="no" id='framing5'/>
+                                                            <input type="radio" name="framing-group" value="Unframed" id='framing5'/>
                                                             <label for='framing5'> Unframed</label>
                                                         </div>
                                                     </td>
@@ -266,100 +273,110 @@
                                         </table>
                                     </div>
                                 </div>
+                            </fieldset>
 
-                                <!-- Date -->
+                            <!-- Date -->
+                            <fieldset>
                                 <div class="form-group">
                                     <label class="col-md-4 control-label blue">Date finished</label>  
                                     <div class="col-md-4 inputGroupContainer groupContainer">
                                         <div class="input-group">
-                                            <input name="date" placeholder="Date" class="form-control"  type="date">
+                                            <input name="date" placeholder="Date" class="form-control"  type="date" required>
                                         </div>
                                     </div>
                                 </div>
+                            </fieldset>
 
-                                <!-- Select Basic -->
+                            <!-- Select -->
+                            <fieldset id='width-group'>
                                 <div class="form-group"> 
                                     <label class="col-md-4 control-label blue">Width</label>
                                     <div class="col-md-4 selectContainer groupContainer">
                                         <div class="input-group">
-                                            <select name="state" class="form-control selectpicker" >
-                                                <option value=" " >Select a width</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                                <option>6</option>
-                                                <option>7</option>
-                                                <option>8</option>
-                                                <option>9</option>
-                                                <option>10</option>
-                                                <option>11</option>
-                                                <option>12</option>
-                                                <option>14</option>
-                                                <option>16</option>
-                                                <option>18</option>
-                                                <option>20</option>
-                                                <option>22</option>
-                                                <option>24</option>
-                                                <option>32</option>
-                                                <option>36</option>
-                                                <option>48</option>
-                                                <option>Other</option>
+                                            <select name="width-group" class="form-control selectpicker" required>
+                                                <option value="" disabled selected>Select a width</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                <option value="14">14</option>
+                                                <option value="16">16</option>
+                                                <option value="18">18</option>
+                                                <option value="20">20</option>
+                                                <option value="22">22</option>
+                                                <option value="24">24</option>
+                                                <option value="32">32</option>
+                                                <option value="36">36</option>
+                                                <option value="48">48</option>
+                                                <option value="Other">Other</option>
                                             </select>
                                         </div>
                                     </div>
                                 </div>
+                            </fieldset>
 
-                                <!-- Select Basic -->
+                            <!-- Select -->
+                            <fieldset id='height-group'>                                
                                 <div class="form-group"> 
                                     <label class="col-md-4 control-label blue">Height</label>
                                     <div class="col-md-4 selectContainer groupContainer">
                                         <div class="input-group">
-                                            <select name="state" class="form-control selectpicker" >
-                                                <option value=" " >Select a height</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                                <option>6</option>
-                                                <option>7</option>
-                                                <option>8</option>
-                                                <option>9</option>
-                                                <option>10</option>
-                                                <option>11</option>
-                                                <option>12</option>
-                                                <option>14</option>
-                                                <option>16</option>
-                                                <option>18</option>
-                                                <option>20</option>
-                                                <option>22</option>
-                                                <option>24</option>
-                                                <option>32</option>
-                                                <option>36</option>
-                                                <option>48</option>
-                                                <option>Other</option>
+                                            <select name="height-group" class="form-control selectpicker" required>
+                                                <option value="" disabled selected>Select a height</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                <option value="14">14</option>
+                                                <option value="16">16</option>
+                                                <option value="18">18</option>
+                                                <option value="20">20</option>
+                                                <option value="22">22</option>
+                                                <option value="24">24</option>
+                                                <option value="32">32</option>
+                                                <option value="36">36</option>
+                                                <option value="48">48</option>
+                                                <option value="Other">Other</option>
                                             </select>
                                         </div>
                                     </div>
                                 </div>
+                            </fieldset>
 
-                                <!-- Select Basic -->
+                            <!-- Select -->
+                            <fieldset id='depth-group'>                                
                                 <div class="form-group"> 
                                     <label class="col-md-4 control-label blue">Depth</label>
                                     <div class="col-md-4 selectContainer groupContainer">
                                         <div class="input-group">
-                                            <select name="state" class="form-control selectpicker" >
-                                                <option value=" " >Select a depth</option>
-                                                <option>0.1</option>
-                                                <option>0.25</option>
-                                                <option>0.5</option>
-                                                <option>0.75</option>
-                                                <option>1.0</option>
-                                                <option>1.5</option>
-                                                <option>2</option>
-                                                <option>Other</option>
+                                            <select name="depth-group" class="form-control selectpicker" required>
+                                                <option value="" disabled selected>Select a depth</option>
+                                                <option value="0.1">0.1</option>
+                                                <option value="0.25">0.25</option>
+                                                <option value="0.5">0.5</option>
+                                                <option value="0.75">0.75</option>
+                                                <option value="1.0">1.0</option>
+                                                <option value="1.5">1.5</option>
+                                                <option value="2">2</option>
+                                                <option value="Other">Other</option>
                                             </select>
                                         </div>
                                     </div>
                                 </div>
+                            </fieldset>
 
-                                <!-- Check boxes -->
+                            <!-- Check boxes -->
+                            <fieldset id='categories-group'>                                
                                 <div class="form-group">
                                     <label class="col-md-4 control-label blue">Categories</label>
                                     <div class="col-md-4 groupContainer">
@@ -368,19 +385,19 @@
                                                 <tr>
                                                     <td>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" name="hosting" value="no" id='categories1' />
+                                                            <input type="checkbox" name="categories-group" value="Abstract" id='categories1' />
                                                             <label for='categories1'> Abstract</label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" name="hosting" value="no" id='categories2' />
+                                                            <input type="checkbox" name="categories-group" value="Non-objective" id='categories2' />
                                                             <label for='categories2'> Non-objective</label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" name="hosting" value="no" id='categories3' />
+                                                            <input type="checkbox" name="categories-group" value="Plein air" id='categories3' />
                                                             <label for='categories3'> Plein air</label>
                                                         </div>
                                                     </td>
@@ -388,19 +405,19 @@
                                                 <tr>
                                                     <td>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" name="hosting" value="no" id='categories4' />
+                                                            <input type="checkbox" name="categories-group" value="Seascape" id='categories4' />
                                                             <label for='categories4'> Seascape</label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" name="hosting" value="no" id='categories5' />
+                                                            <input type="checkbox" name="categories-group" value="Water" id='categories5' />
                                                             <label for='categories5'> Water</label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" name="hosting" value="no" id='categories6' />
+                                                            <input type="checkbox" name="categories-group" value="Landscapes: canyons" id='categories6' />
                                                             <label for='categories6'> Landscapes: canyons</label>
                                                         </div>
                                                     </td>
@@ -408,19 +425,19 @@
                                                 <tr>
                                                     <td>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" name="hosting" value="no" id='categories7' />
+                                                            <input type="checkbox" name="categories-group" value="Landscape: river" id='categories7' />
                                                             <label for='categories7'> Landscape: river</label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" name="hosting" value="no" id='categories8' />
+                                                            <input type="checkbox" name="categories-group" value="Landscape: trees" id='categories8' />
                                                             <label for='categories8'> Landscape: trees</label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" name="hosting" value="no" id='categories9' />
+                                                            <input type="checkbox" name="categories-group" value="Landscape: landmark" id='categories9' />
                                                             <label for='categories9'> Landscape: landmark</label>
                                                         </div>
                                                     </td>
@@ -428,19 +445,19 @@
                                                 <tr>
                                                     <td>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" name="hosting" value="no" id='categories10' />
+                                                            <input type="checkbox" name="categories-group" value="Flowers and garden" id='categories10' />
                                                             <label for='categories10'> Flowers and garden</label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" name="hosting" value="no" id='categories11' />
+                                                            <input type="checkbox" name="categories-group" value="Cityscape" id='categories11' />
                                                             <label for='categories11'> Cityscape</label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" name="hosting" value="no" id='categories12' />
+                                                            <input type="checkbox" name="categories-group" value="Interior" id='categories12' />
                                                             <label for='categories12'> Interior</label>
                                                         </div>
                                                     </td>
@@ -448,19 +465,19 @@
                                                 <tr>
                                                     <td>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" name="hosting" value="no" id='categories13' />
+                                                            <input type="checkbox" name="categories-group" value="Mural" id='categories13' />
                                                             <label for='categories13'> Mural</label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" name="hosting" value="no" id='categories14' />
+                                                            <input type="checkbox" name="categories-group" value="Portraits and figures" id='categories14' />
                                                             <label for='categories14'> Portraits and figures</label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" name="hosting" value="no" id='categories15' />
+                                                            <input type="checkbox" name="categories-group" value="Sports" id='categories15' />
                                                             <label for='categories15'> Sports</label>
                                                         </div>
                                                     </td>
@@ -468,19 +485,19 @@
                                                 <tr>
                                                     <td>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" name="hosting" value="no" id='categories16' />
+                                                            <input type="checkbox" name="categories-group" value="Birds" id='categories16' />
                                                             <label for='categories16'> Birds</label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" name="hosting" value="no" id='categories17' />
+                                                            <input type="checkbox" name="categories-group" value="Cats, dogs" id='categories17' />
                                                             <label for='categories17'> Cats, dogs</label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" name="hosting" value="no" id='categories18' />
+                                                            <input type="checkbox" name="categories-group" value="Horses, cows, sheep" id='categories18' />
                                                             <label for='categories18'> Horses, cows, sheep</label>
                                                         </div>
                                                     </td>
@@ -488,19 +505,19 @@
                                                 <tr>
                                                     <td>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" name="hosting" value="no" id='categories19' />
+                                                            <input type="checkbox" name="categories-group" value="Still life: salsa" id='categories19' />
                                                             <label for='categories19'> Still life: salsa</label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" name="hosting" value="no" id='categories20' />
+                                                            <input type="checkbox" name="categories-group" value="Still life: food on the table" id='categories20' />
                                                             <label for='categories20'> Still life: food on the table</label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="checkbox">
-                                                            <input type="checkbox" name="hosting" value="no" id='categories21' />
+                                                            <input type="checkbox" name="categories-group" value="Still life: other; not flowers" id='categories21' />
                                                             <label for='categories21'> Still life: other; not flowers</label>
                                                         </div>
                                                     </td>
@@ -509,26 +526,30 @@
                                         </table>
                                     </div>
                                 </div>
+                            </fieldset>
 
-                                <!-- Text area -->
+                            <!-- Text area -->
+                            <fieldset id='description-group'>
                                 <div class="form-group">
                                     <label class="col-md-4 control-label blue">Description</label>
                                     <div class="col-md-4 inputGroupContainer groupContainer">
                                         <div class="input-group">
-                                            <textarea class="form-control" name="comment" placeholder="Description"></textarea>
+                                            <textarea class="form-control" name="description" placeholder="Description" required></textarea>
                                         </div>
                                     </div>
                                 </div>
+                            </fieldset>
 
-                                <!-- Button -->
+
+                            <!-- Button -->
+                            <fieldset>
                                 <div class="form-group">
                                     <label class="col-md-4 control-label"></label>
                                     <div class="col-md-4">
-                                        <button type="submit" class="btn btn-warning" >Send </button>
+                                        <button type="submit" class="btn btn-warning" id='addWork-submit-btn'>Send</button>
                                     </div>
                                 </div>
-
-                            </fieldset>
+                            </fieldset>                            
                         </form>
                     </div>
                 </div>
@@ -554,6 +575,13 @@
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
         <script src="assets/js/jquery.backstretch.min.js"></script>
         <script src="assets/js/scripts.js"></script>
+        <script type="text/javascript">
+             $('#addWork-submit-btn').on('submit', function() {
+                    alert('gg');
+                }
+            );
+
+        </script>
         
         <!--[if lt IE 10]>
             <script src="assets/js/placeholder.js"></script>

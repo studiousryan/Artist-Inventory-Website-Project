@@ -109,6 +109,27 @@ jQuery(document).ready(function() {
 
     });
 
+    /****** addWork page *****/
+    // Check if any checkbox is selected
+    $('#addWork-submit-btn').on('submit', function() {
+        alert('gg');
+        var len = $('input[type=checkbox]:checked').length;
+
+        if (!len) {
+            alert('Please select at least one category.');
+            return false;
+        };
+    });
+
+    // $('#addWork-submit-btn').click(function() {
+    //     alert('gg2');
+    //     var len = $('input[type=checkbox]:checked').length;
+
+    //     if (!len) {
+    //         alert('Please select at least one category.');
+    //         return false;
+    //     };
+    // });
 
 });
 
