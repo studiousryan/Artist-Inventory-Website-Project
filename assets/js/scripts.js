@@ -63,33 +63,6 @@ jQuery(document).ready(function() {
             });
         };
     });
-
-    // $('#form-username').change(function(){
-    //     if (this.value) {
-    //         $.ajax({
-    //             type: 'POST',
-    //             url: 'chechUsernameAvailabilityHandler.php',
-    //             data: {
-    //                 username: this.value
-    //             },
-    //             success: function (response) {
-    //                 // alert(response);
-    //                 $('#form-username').width('5%');
-    //                 if (response) {
-    //                     alert('in avail');
-    //                     $('#username-yes').show();
-    //                     $('#username-no').hide();
-    //                     $('#usernameAvailInfo').text('Username is available :)');
-    //                 } else {
-    //                     alert('in NOT avail');
-    //                     $('#username-yes').hide();
-    //                     $('#username-no').show();
-    //                     $('#usernameAvailInfo').text('Username has already existed.');
-    //                 }
-    //             }
-    //         });
-    //     };
-    // });
     
     $('.registration-form').on('submit', function(e) {
         
@@ -111,8 +84,7 @@ jQuery(document).ready(function() {
 
     /****** addWork page *****/
     // Check if any checkbox is selected
-    $('#addWork-submit-btn').on('submit', function() {
-        alert('gg');
+    $('#addWork-submit-btn').click(function() {
         var len = $('input[type=checkbox]:checked').length;
 
         if (!len) {
@@ -121,18 +93,9 @@ jQuery(document).ready(function() {
         };
     });
 
-    // $('#addWork-submit-btn').click(function() {
-    //     alert('gg2');
-    //     var len = $('input[type=checkbox]:checked').length;
-
-    //     if (!len) {
-    //         alert('Please select at least one category.');
-    //         return false;
-    //     };
-    // });
-
 });
 
+/****** Password validation *****/
 function checkForm(form) {
     if (form.formPassword.value != form.formConfirmedPassword.value) {
         alert('Two passwords should be identical!');
