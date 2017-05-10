@@ -1,7 +1,7 @@
 <?php 
 session_start();
-include 'dbHandler.php';
-include 'tableVars.php';
+require_once 'dbHandler.php';
+require_once 'tableVars.php';
 
 $username = $_POST['formUsername'];
 $email = $_POST['formEmail'];

@@ -1,7 +1,6 @@
 <?php 
 session_start();
-
-include 'dbHandler.php';
+require_once 'dbHandler.php';
 
 if (isset($_POST['username']) and isset($_POST['password'])) {
 	$username = $_POST['username'];

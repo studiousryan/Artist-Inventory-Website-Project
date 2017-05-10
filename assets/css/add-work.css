@@ -87,3 +87,7 @@ td	{
 #add_work_form .input-group {
 	width: 100%;
 }
+
+#add_work_form input[type=file] {
+	padding: 2px 0 0 0;
+}

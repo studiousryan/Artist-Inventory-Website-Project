@@ -1,7 +1,7 @@
 <?php 
-include 'dbVars.php';
-include 'dbHandler.php';
-include 'tableVars.php';
+require_once 'dbVars.php';
+require_once 'dbHandler.php';
+require_once 'tableVars.php';
 
 if (isset($_POST['username'])) {
 	$username = $_POST['username'];
@@ -14,5 +14,5 @@ if (isset($_POST['username'])) {
 		echo "existent";
 	} else
 		echo "non_existent";
-}
+	}
 ?>

@@ -64,7 +64,7 @@
                     </div>
                     
                     <div class="row">
-                        <form class="well form-horizontal col-sm-5" action="index.html" method="post"  id="add_work_form">
+                        <form enctype='multipart/form-data' class="well form-horizontal col-sm-5" action="addWorkHandler.php" method="post"  id="add_work_form">
                             
                             <fieldset>
                                 <legend class='blue'>Work details</legend>
@@ -81,7 +81,18 @@
                                 </div>
                             </fieldset>
 
-                            <fieldset id='media-group'>
+                            <fieldset>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label blue">Select a image</label>
+                                    <div class="col-md-4 inputGroupContainer groupContainer">
+                                        <div class="input-group">
+                                            <input class='form-control' id='imageUploader' type='file' name="imageUploader" accept='image/*' required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset id='media'>
                                 <div class="form-group">
                                     <label class="col-md-4 control-label blue">Media</label>
                                     <div class="col-md-4 groupContainer">
@@ -90,19 +101,19 @@
                                                 <tr>
                                                     <td>
                                                         <div class="radio">
-                                                            <input type="radio" name="media-group" value="Oil, oil pastel" id='media1' required/>
+                                                            <input type="radio" name="media" value="Oil, oil pastel" id='media1' required/>
                                                             <label for='media1'> Oil, oil pastel</label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="radio">
-                                                            <input type="radio" name="media-group" value="Acrylic" id='media2'/>
+                                                            <input type="radio" name="media" value="Acrylic" id='media2'/>
                                                             <label for='media2'> Acrylic</label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="radio">
-                                                            <input type="radio" name="media-group" value="Watercolor" id='media3'/>
+                                                            <input type="radio" name="media" value="Watercolor" id='media3'/>
                                                             <label for='media3'> Watercolor</label>
                                                         </div>
                                                     </td>
@@ -110,19 +121,19 @@
                                                 <tr>
                                                     <td>
                                                         <div class="radio">
-                                                            <input type="radio" name="media-group" value="Mixed Media" id='media4'/>
+                                                            <input type="radio" name="media" value="Mixed Media" id='media4'/>
                                                             <label for='media4'> Mixed Media</label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="radio">
-                                                            <input type="radio" name="media-group" value="Pen" id='media5'/>
+                                                            <input type="radio" name="media" value="Pen" id='media5'/>
                                                             <label for='media5'> Pen</label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="radio">
-                                                            <input type="radio" name="media-group" value="Graphite" id='media6'/>
+                                                            <input type="radio" name="media" value="Graphite" id='media6'/>
                                                             <label for='media6'> Graphite</label>
                                                         </div>
                                                     </td>
@@ -130,19 +141,19 @@
                                                 <tr>
                                                     <td>
                                                         <div class="radio">
-                                                            <input type="radio" name="media-group" value="Fiber, felt, fabric" id='media7'/>
+                                                            <input type="radio" name="media" value="Fiber, felt, fabric" id='media7'/>
                                                             <label for='media7'> Fiber, felt, fabric</label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="radio">
-                                                            <input type="radio" name="media-group" value="Pastel" id='media8'/>
+                                                            <input type="radio" name="media" value="Pastel" id='media8'/>
                                                             <label for='media8'> Pastel</label>
                                                         </div>
                                                     </td>
                                                     <td>
                                                         <div class="radio">
-                                                            <input type="radio" name="media-group" value="Silkscreen" id='media9'/>
+                                                            <input type="radio" name="media" value="Silkscreen" id='media9'/>
                                                             <label for='media9'> Silkscreen</label>
                                                         </div>
                                                     </td>
@@ -535,7 +546,7 @@
                                 <div class="form-group">
                                     <label class="col-md-4 control-label"></label>
                                     <div class="col-md-4">
-                                        <button type="submit" class="btn btn-warning" id='addWork-submit-btn'>Send</button>
+                                        <button type="submit" class="btn btn-warning" name='addWork-submit-btn' id='addWork-submit-btn'>Add work</button>
                                     </div>
                                 </div>
                             </fieldset>                            

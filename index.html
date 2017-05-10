@@ -45,7 +45,7 @@
                         </ul>
                     </li>
                     <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li> -->
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                 </ul>
             </div>
         </nav>
@@ -72,34 +72,34 @@
 	                        		</div>
 	                            </div>
 	                            <div class="form-bottom">
-				                    <form role="form" action="signupHandler.php" method="post" class="registration-form" id='registration-form' onsubmit='return checkForm(this);'>
+				                    <form role="form" action="signupHandler.php" method="post" class="registration-form" id='registration-form' >
 				                    	<div class="form-group">
 				                    		<label class="sr-only" for="formUsername">Username</label>
 
 				                        	<!-- <input type="text" name="form-first-name" placeholder="First name" class="form-first-name form-control" id="form-first-name" pattern='^\w+$'> -->
-                                            <input type="text" name="formUsername" placeholder="Username" class="form-username form-control" id="form-username" pattern='^\w+$' required>
+                                            <input type="text" name="formUsername" placeholder="Username" class="registration-form-username form-control" id="registration-form-username" pattern='^\w+$' required>
                                             <span class="glyphicon glyphicon-ok green-icon hide-for-now" id='username-yes'></span>
                                             <span class="glyphicon glyphicon-remove red-icon hide-for-now" id='username-no'></span>
                                             <span id='usernameAvailInfo'></span>
 				                        </div>
 				                        <div class="form-group">
-				                        	<label class="sr-only" for="formEmail">Email</label>
-				                        	<input type="email" name="formEmail" placeholder="Email address" class="form-email form-control" id="form-email" required>
+				                        	<label class="sr-only" for="registrationFormEmail">Email</label>
+				                        	<input type="email" name="registrationFormEmail" placeholder="Email address" class="registration-form-email form-control" id="registration-form-email" required>
 				                        </div>
                                         <div class="form-group">
-                                            <label class="sr-only" for="formPassword">Password</label>
-                                            <input type="password" name="formPassword" placeholder="Password" class="form-password form-control" id="form-password" pattern='(?=^.{8,}$)((?=.*\w)|(?=.*\W+))(?![.\n])(?!.*\s).*$' required>
+                                            <label class="sr-only" for="registrationFormPassword">Password</label>
+                                            <input type="password" name="registrationFormPassword" placeholder="Password" class="registration-form-password form-control" id="registration-form-password" pattern='(?=^.{8,}$)((?=.*\w)|(?=.*\W+))(?![.\n])(?!.*\s).*$' required>
                                         </div>
                                         <div class="form-group">
-                                            <label class="sr-only" for="formConfirmedPassword">Password</label>
-                                            <input type="password" name="formConfirmedPassword" placeholder="Confirm your password" class="form-confirmed-password form-control" id="form-confirmed-password" required>
+                                            <label class="sr-only" for="registrationFormConfirmedPassword">Password</label>
+                                            <input type="password" name="registrationFormConfirmedPassword" placeholder="Confirm your password" class="registration-form-confirmed-password form-control" id="registration-form-confirmed-password" required>
                                         </div>
 				                        <!-- <div class="form-group">
 				                        	<label class="sr-only" for="form-about-yourself">About yourself</label>
 				                        	<textarea name="form-about-yourself" placeholder="About yourself..." 
 				                        				class="form-about-yourself form-control" id="form-about-yourself"></textarea>
 				                        </div> -->
-				                        <button type="submit" class="btn">Sign up!</button>
+				                        <button type="submit" class="btn" id='signup-btn'>Sign up!</button>
 				                    </form>
 			                    </div>
                         	</div>
