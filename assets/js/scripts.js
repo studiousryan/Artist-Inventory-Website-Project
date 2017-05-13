@@ -7,26 +7,60 @@ jQuery(document).ready(function() {
     
     /***** Login form validation *****/
     /*********************************/
-    $('#login-form-btn').click(function() {
-        if ( $('#loginFormUsername').val() && $('#loginFormPassword').val() ) {
+    // $('#login-form-btn').click(function() {
+    //     if ( $('#loginFormUsername').val() && $('#loginFormPassword').val() ) {
+    //         $.ajax({
+    //             type: 'POST',
+    //             url: 'loginHandler2.php',
+    //             data: {
+    //                 username: $('#loginFormUsername').val(),
+    //                 password: $('#loginFormPassword').val()
+    //             },
+    //             success: function(response) {
+    //                 alert('ajax succeeded');
+    //                 // $('#loginFormUsername').val('working');
+    //             },
+    //             error: function(){
+    //                 alert("failure");
+    //             }
+    //         });
+    //     }
+    // });
+    
+    $('#login-form').submit(function(){
+
+        $('#loginErrorInfo').show();
+
+        if ($('#loginFormUsername').val() && $('#loginFormPassword')) {
             $.ajax({
                 type: 'POST',
                 url: 'loginHandler2.php',
                 data: {
                     username: $('#loginFormUsername').val(),
-                    password: $('#loginFormPassword').val()
+                    password: $('#loginFormPassword').val(),
                 },
-                success: function(response) {
-                    alert('ajax succeeded');
-                    // $('#loginFormUsername').val('working');
+                success: function(response){
+
+                    if (response == '0') {
+                        // $('#loginErrorInfo').show();
+                        // alert('in');
+                        $('#loginErrorInfo').val('Your input does not match our records.')
+                        return false;
+                    } else if (response == '2') {
+                        alert('More than one match!');
+                        return false;
+                    } else {
+                        alert($_SESSION['username']);
+                        // return true;
+                    }
                 },
                 error: function(){
-                    alert("failure");
+                    alert('ajax failed.');
                 }
             });
-        }
+        };
     });
-    
+
 
     /***** Registration form validation *****/
     /****************************************/
@@ -96,3 +130,7 @@ jQuery(document).ready(function() {
     });
 
 });
+
+function checkLoginInfo () {
+    
+}

@@ -99,6 +99,9 @@ img { max-width: 100%; }
 	color: #19b9e7 !important;
 }
 
+.red {
+	color: red !important;
+}
 
 /***** Top content *****/
 .navbar {
