@@ -1,7 +1,7 @@
 jQuery(document).ready(function(){
 
 	/* Fullscreen background */
-	$.backstretch('CKimages/bg.jpg');
+	$.backstretch('CKimages/bg2.jpg');
 
 	
 
